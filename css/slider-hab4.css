@@ -1,0 +1,148 @@
+.container-all-body-hab img{
+   
+    height: 100%;
+	width: 100%;
+ 	
+		
+}
+
+
+
+/*SLIDER 4*/
+
+.container-all-body-hab4 img{
+   
+    height: 100%;
+	width: 100%;
+ 	
+		
+}
+
+.container-all-body-hab4{
+
+    position: relative;
+    width: 100%;
+	border-radius: 0px;
+    overflow: hidden;
+   
+}
+
+
+.slide-body-hab4{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 40s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.item-slide-body-hab4{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+
+.pagination-body-hab4{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item-body-hab4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 10px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.pagination-item-body-hab4:hover{
+    transform: scale(2);
+}
+
+.pagination-item-body-hab4 img{
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transition: all 300ms;
+}
+
+.pagination-item-body-hab4:hover img{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+input[id="14"]:checked ~ .slide-body-hab4{
+    animation: none;
+    transform: translate3d(0, 0, 0);
+}
+
+input[id="14"]:checked ~ .pagination-body-hab4 .pagination-item-body-hab4[for="14"]{
+    background: #fff;
+}
+
+input[id="24"]:checked ~ .slide-body-hab4{
+    animation: none;
+    transform: translate3d(calc(-100% * 1), 0, 0);
+}
+
+input[id="24"]:checked ~ .pagination-body-hab4 .pagination-item-body-hab4[for="24"]{
+    background: #fff;
+}
+
+
+
+
+
+
+
+@keyframes autoplay{
+    50%{
+        transform: translate3d(calc(-100% * 0), 0, 0);
+    }
+    
+    100%{
+        transform: translate3d(calc(-100% * 1), 0, 0);
+    }
+    
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

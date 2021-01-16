@@ -1,0 +1,36 @@
+body{
+    background:#272C45; 
+}
+
+.principal
+{
+	margin-top:25px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn
+{
+	border-radius: 20px;
+	cursor: pointer;
+	transition: .3s case all;
+}
+
+p
+{
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid
+{
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	background-color: #272C45;
+}
+
+nav
+{
+	background-color: #272C45;
+}
+
